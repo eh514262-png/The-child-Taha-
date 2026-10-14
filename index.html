@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f6">
+<title>فرحة طه</title>
+<style>
+*{box-sizing:border-box}
+:root{--pink:#c33e79;--deep:#7c2450;--gold:#d7a35d}
+body{margin:0;background:#fff5f8;color:#57243d;font-family:Tahoma,Arial,sans-serif;text-align:center}
+#site{min-height:100vh;padding:22px 15px 34px;background:radial-gradient(ellipse at top,#fff 0,#fff1f7 50%,#ffe4ef 100%)}
+.wrap{max-width:540px;margin:auto}
+.top-flower{font-size:28px;color:var(--pink);letter-spacing:8px}
+.kicker{font-size:19px;color:var(--deep);margin:10px 0}
+h1{font-size:clamp(44px,12vw,62px);margin:5px 0;color:var(--pink);text-shadow:0 4px 0 #f8d1e1}
+h2{color:var(--deep);margin:10px 0 15px}
+p{line-height:1.95}
+.hero{padding:20px 12px 24px;border:1px solid #f0b6ce;border-radius:28px;background:#ffffffc9;box-shadow:0 12px 35px #b746751c}
+.heart{font-size:43px;animation:pulse 1.3s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.card{max-width:520px;margin:18px auto;padding:21px 15px;border:1px solid #edb1ca;border-radius:23px;background:#ffffffdc;box-shadow:0 9px 26px #a93d6b15}
+#timer{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;direction:rtl;margin-top:14px}
+.unit{background:linear-gradient(150deg,#fff5fa,#ffe5f0);border:1px solid #f4c4d8;border-radius:15px;padding:12px 2px}
+.num{font-size:clamp(23px,6vw,34px);font-weight:bold;color:var(--pink);font-variant-numeric:tabular-nums}
+.unit small{display:block;margin-top:7px;font-size:12px;color:#78334f}
+.dua{font-size:17px;line-height:2.1}
+input,textarea{display:block;width:100%;padding:14px;margin:9px 0;border:1px solid #e6a5c1;border-radius:14px;font:16px Tahoma;background:#fff;color:#54223c;outline-color:#c33e79}
+textarea{min-height:92px;resize:vertical}
+button{border:0;border-radius:30px;padding:14px 20px;font-size:16px;font-weight:bold;cursor:pointer;margin:8px 0}
+.preview-btn{background:linear-gradient(100deg,#d9588d,#a72d65);color:white}
+.whatsapp{background:#16b968;color:white;width:100%}
+#preview{display:none;text-align:right;white-space:pre-line;line-height:2;padding:15px;border-radius:15px;background:#fff0f6;border:1px solid #f0c2d6;overflow-wrap:anywhere}
+footer{padding:20px 0;color:#9e3467;line-height:2}
+.divider{color:#c3487c;font-size:24px;letter-spacing:8px;margin:10px}
+
+
+
+55%{transform:scale(1.28)}100%{transform:scale(1.42);filter:brightness(.96)}}
+}
+}
+
+</style>
+</head>
+<body>
+
+</div>
+
+<main id="site">
+<div class="wrap">
+  <div class="top-flower">✿ ❀ ✿</div>
+  <p class="kicker">أجمل فرحة وصلت الدنيا</p>
+  <section class="hero">
+    <div class="heart">♡</div>
+    <h1>طه</h1>
+    <h2>مبروك المولود الجديد</h2>
+    <p>نورت الدنيا يا طه، ربنا يحفظك ويبارك فيك ويجعلك فرحة لأهلك طول العمر.</p>
+    <div class="divider">❀ ✿ ❀</div>
+  </section>
+
+  <section class="card">
+    <h2>🤍</h2>
+    <div id="timer">
+      <div class="unit"><div class="num" id="days">0</div><small>أيام</small></div>
+      <div class="unit"><div class="num" id="hours">0</div><small>ساعات</small></div>
+      <div class="unit"><div class="num" id="mins">0</div><small>دقائق</small></div>
+      <div class="unit"><div class="num" id="secs">0</div><small>ثواني</small></div>
+    </div>
+    <p style="font-size:12px;color:#94617a">من يوم 14 أكتوبر 2026، الساعة 12 ظهرًا تقريبًا</p>
+  </section>
+
+  <section class="card">
+    <div style="font-size:34px">🤲🏻</div>
+    <h2>دعاء للمولود</h2>
+    <p class="dua">اللهم أنبته نباتًا حسنًا، واجعله قرة عين لوالديه، واحفظه بعينك التي لا تنام، وبارك له في عمره ورزقه، واجعله من الصالحين، واكتب له السعادة في الدنيا والآخرة.</p>
+    <div class="divider">♡ ❀ ♡</div>
+  </section>
+
+  <section class="card">
+    <h2>اكتب مباركتك لطه</h2>
+    <p>اكتب اسمك ورسالتك، واعرض المباركة قبل إرسالها.</p>
+    <input id="sender" placeholder="اسم اللي بيبعت المباركة">
+    <textarea id="custom" placeholder="اكتب تهنئتك هنا (اختياري)"></textarea>
+    <button class="preview-btn" onclick="showMessage()">عرض المباركة</button>
+    <div id="preview"></div>
+    <button class="whatsapp" onclick="sendWhatsApp()">إرسال التهنئة على واتساب</button>
+    <p style="font-size:13px">+20 10 34568307</p>
+  </section>
+  <footer>
+    <div class="divider">❀ ✿ ❀</div>
+    ربنا يخليك معانا دايمًا يا طه ❤️
+    <p>فرحة جديدة وحكاية مليانة حب</p>
+  </footer>
+</div>
+</main>
+<script>
+const birth = new Date('2026-10-14T12:00:00+03:00');
+function updateTimer(){
+  let s=Math.max(0,Math.floor((Date.now()-birth.getTime())/1000));
+  document.getElementById('days').textContent=Math.floor(s/86400);
+  document.getElementById('hours').textContent=Math.floor(s%86400/3600);
+  document.getElementById('mins').textContent=Math.floor(s%3600/60);
+  document.getElementById('secs').textContent=s%60;
+}
+updateTimer(); setInterval(updateTimer,1000);
+function getMessage(){
+ const name=document.getElementById('sender').value.trim()||'أحد أحباب طه';
+ const custom=document.getElementById('custom').value.trim()||'مليون مبروك المولود طه، جعله الله من مواليد السعادة، وبارك فيه وحفظه لوالديه، ورزقه الصحة والعافية.';
+ return '🌸 مباركة للمولود طه 🌸\\nمن: '+name+'\\n\\n'+custom+'\\n\\nربنا يخليك معانا دايمًا يا طه ❤️';
+}
+function showMessage(){
+ const p=document.getElementById('preview');p.textContent=getMessage();p.style.display='block';
+}
+function sendWhatsApp(){
+ window.open('https://wa.me/201034568307?text='+encodeURIComponent(getMessage()),'_blank');
+}
+</script>
+</body>
+</html>
